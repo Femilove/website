@@ -1,0 +1,97 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="{% static 'files/register.css' %}" />
+  </head>
+  <body>
+    <section>
+      <h1>Sign Up</h1>
+      <form action="register" method="post">
+        {% csrf_token %}
+
+        <p>
+          <label for="first_name">First Name:&nbsp;</label>
+          <input
+            type="text"
+            name="first_name"
+            placeholder="first_name"
+            id="first_name"
+            autofocus
+            required
+          />
+        </p>
+        <p>
+          <label for="last_name">Last Name:&nbsp;</label>
+          <input
+            type="text"
+            name="last_name"
+            placeholder="last_name"
+            id="last_name"
+          />
+        </p>
+        <p>
+          <label for="username">Username:&nbsp;&nbsp;</label>
+          <input
+            type="text"
+            name="username"
+            placeholder="username"
+            id="username"
+          />
+        </p>
+        <p>
+          <label for="email"
+            >Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label
+          >
+          <input
+            type="email"
+            name="email"
+            placeholder="email"
+            id="email"
+            autocomplete="on"
+          />
+        </p>
+        <p>
+          <label for="password1">Password:&nbsp;&nbsp;</label>
+          <input
+            type="password"
+            name="password1"
+            placeholder="Password"
+            id="password1"
+          />
+        </p>
+        <p>
+          <label for="password2">Password:&nbsp;&nbsp;</label>
+          <input
+            type="password"
+            name="password2"
+            placeholder="Comfirm Password"
+            id="password2"
+          />
+        </p>
+        <p>
+          <label for="superuser">superuser:&nbsp;&nbsp;</label>
+          <input
+            type="password"
+            name="superuser"
+            placeholder="Superuser"
+            id="superuser"
+          />
+        </p>
+        <p>
+          <button type="reset" class="no2">Reset</button>
+          <button type="submit" class="no1">Submit</button>
+        </p>
+      </form>
+
+      <div>
+        {% for message in messages %}
+        <h3>{{message}}</h3>
+        {% endfor %}
+      </div>
+    </section>
+  </body>
+</html>
