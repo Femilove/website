@@ -30,9 +30,9 @@ environ.Env.read_env
 SECRET_KEY = 'django-insecure-qq5k1y6($)ldbj%0%e!p6m*46bzg&#d)hg%6l8=t=&0h)_w7$j'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS =['127.0.0.1', 'localhost', 'school-3v9a.onrender.com']
 
 
 # Application definition
