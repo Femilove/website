@@ -1,6 +1,6 @@
 set -o errexit
 
-
+ENTRYPOINT [ "gunicorn" , "school.wsgi"
 pip install -r requirements.txt
 pip install gunicorn
 
