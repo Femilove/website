@@ -83,7 +83,7 @@ def register(response):
             return redirect('Register')
 
     else:
-        return render(response, 'Register')
+        return render(response, 'Register.html')
 
 
 # creating a fuction for login.url
