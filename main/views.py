@@ -98,7 +98,7 @@ def login(response):
 
         if user is not None:
             auth.login(response, user)
-            return redirect("landing.html")
+            return redirect("landing")
         else:
 
             messages.info(response, 'Invaliid credencials')
