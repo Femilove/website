@@ -105,7 +105,7 @@ def login(response):
             return redirect("login")
 
     else:
-        return render(response, 'login')
+        return render(response, 'login.html')
 
 # creating a fuction for logout.url
 
