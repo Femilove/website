@@ -12,6 +12,12 @@
         color: black;
         font-size: larger;
       }
+      .logo .logo-img {
+        width: 8rem;
+        height: 5rem;
+        object-fit: cover;
+        border-radius: 5%;
+      }
       .footer-buttons {
         padding: 2rem;
         text-align: center;
