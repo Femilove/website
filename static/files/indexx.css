@@ -13,8 +13,8 @@
         font-size: larger;
       }
       .logo .logo-img {
-        width: 8rem;
-        height: 5rem;
+        width: 6rem;
+        height: 3rem;
         object-fit: cover;
         border-radius: 5%;
       }
