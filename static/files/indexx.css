@@ -10,11 +10,11 @@
       .head1 {
         text-align: center;
         color: black;
-        font-size: larger;
+        font-size: large;
       }
       .logo .logo-img {
         width: 6rem;
-        height: 3rem;
+        height: 4rem;
         object-fit: cover;
         border-radius: 5%;
       }
