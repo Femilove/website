@@ -54,6 +54,12 @@
           
           font-size: small;
         }
+        .footer-buttons {
+          padding: 2rem;
+          text-align: center;
+          position: relative;
+          top: 10rem;
+            }
      
           
           
